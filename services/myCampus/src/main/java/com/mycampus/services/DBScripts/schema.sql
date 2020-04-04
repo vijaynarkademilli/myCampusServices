@@ -1,5 +1,7 @@
 CREATE USER mycampus IDENTIFIED BY Madhu$33;
 
+ALTER USER mycampus QUOTA UNLIMITED ON SYSTEM;
+
 GRANT create session TO mycampus;
 GRANT create table TO mycampus;
 GRANT create view TO mycampus;

@@ -10,7 +10,8 @@ import javax.persistence.*;
 public class Role {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "role_id_generator")
+    @SequenceGenerator(name="role_id_generator", sequenceName = "role_seq",allocationSize=1)
     private Integer id;
 
     @Enumerated(EnumType.STRING)
