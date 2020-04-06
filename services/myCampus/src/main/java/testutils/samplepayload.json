@@ -1,0 +1,20 @@
+//Below json is for testing webservice from postman client
+{
+    "username":"admin",
+    "email":"admin@gmail.com",
+    "password":"123456789",
+    "role": ["admin"]
+}
+
+// http://localhost:8089/api/test/user -- UnAuthorized Request
+// http://localhost:8089/api/test/all -- to get all public content
+
+//http://localhost:8089/api/auth/signin
+
+{
+    "username": "admin",
+    "password": "123456789"
+}
+
+
+
